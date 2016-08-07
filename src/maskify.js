@@ -1,10 +1,9 @@
 'use strict';
 // ('1234fnb') => '###4fnb'
-function maskify(cc) {
-	return cc
+let maskify = (cc) =>
+	cc
 	.split('')
 	.reduce((total, curr, currentIndex, arr) => 
 		currentIndex < (arr.length-4) ? total + '#': total + arr[currentIndex], '')
-} 
 
-console.log(maskify('123a45'))//##3a45
+ console.log(maskify('123a45'))//##3a45
