@@ -1,7 +1,7 @@
 'use strict';
 /*An isogram is a word that has no repeating letters, consecutive or non-consecutive.
 aspol => true, asspol => false*/
-let isIsogram = (str) =>
+let isIsogram = str =>
 	!str
 	.toLowerCase()
 	.split('')

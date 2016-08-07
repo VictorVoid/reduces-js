@@ -1,6 +1,6 @@
 'use strict';
 // ('1234fnb') => '###4fnb'
-let maskify = (cc) =>
+let maskify = cc =>
 	cc
 	.split('')
 	.reduce((total, curr, currentIndex, arr) => 
