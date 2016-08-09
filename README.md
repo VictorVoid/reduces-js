@@ -53,6 +53,7 @@ let maskify = cc =>
 5.
 
 ```js
+//promise all
 const fs = require('fs');
 
 function promiseAll (arr) {
@@ -124,4 +125,24 @@ let addUsers = user => user['name']
 		})
 		return prev;
 	},[]);
+```
+
+7.
+
+```js
+//alphabet position
+const fs = require('fs');
+
+let alphabet = fs.readFileSync('alphabet.txt', 'utf8')
+	.trim()
+	.split(' ')
+	.map(n => n.toLowerCase())
+
+let alphabetPosition = (text) => {
+	return text
+	.split('')
+	.filter(n => n != ' ')
+	.reduce((prev, curr) => prev.concat(alphabet.indexOf(curr) + 1), [])
+	.join(' ')
+}	
 ```
