@@ -1,4 +1,3 @@
-'use strict'
 let users_values = {
 	name: [ 
 	  'Victor Igor'
@@ -6,7 +5,7 @@ let users_values = {
 	, 'Joao Messias'
 	, 'Andy Self'
 	, 'Archer Gly'
-	],	
+	],
 	username: [
 	  'vitus'
 	, 'jose123'
@@ -19,7 +18,7 @@ let users_values = {
 let addUsers = user => user['name']
 	.reduce((prev, curr, i, a) => {
 		prev.push({
-		  name: curr		
+		  name: curr
 		, bio: 'place your bio here'
 		, dateregister: Date.now()
 		, avatarpath: 'place your avatar here'
@@ -31,7 +30,7 @@ let addUsers = user => user['name']
 		  , disabled: false
 		  , hashtoken: 'hash()'
 		  }
-		})
+		});
 		return prev;
 	},[]);
 console.log(addUsers(users_values));
