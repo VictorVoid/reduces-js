@@ -168,4 +168,5 @@ function deleteNth(arr,x){
         }, {})
          return obj[v];
     };
+}
 ```
